@@ -5,10 +5,14 @@
 	box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 /* Navigation */
 nav{
     height: 60px;
-    background-color: crimson;
+    background-color:black;
 }
 
 nav h1{
@@ -16,7 +20,7 @@ nav h1{
     width: 200px;
     top: 15px;
     left: 5%;
-    color: #000;
+    color:rgb(4, 0, 0);
     text-transform: uppercase;
 }
 
@@ -35,7 +39,7 @@ nav ul li{
 nav ul li a{
     position: relative;
     padding: 5px 0;
-    color: #000;
+    color: white;
     font-size: 18px;
     text-decoration: none;
 }
@@ -87,10 +91,11 @@ h4{
 
 
 
+
 .about{
 	width: 100%;
 	padding: 100px 0px;
-	background-color: #191919;
+	background-color:black ;
 }
 .about img{
 	height: 700px;
@@ -162,7 +167,7 @@ button:hover{
 	min-height: 400px;
 }
 .card{
-	height: 365px;
+	height: 380px;
 	width: 335px;
 	padding: 20px 35px;
 	background: #191919;
@@ -188,8 +193,8 @@ h5{
 .pra p{
 	color: #fcfc;
 	font-size: 16px;
-	line-height: 27px;
-	margin-bottom: 25px;
+	line-height: 20px;
+
 }
 .card .button{
 	background-color:#f9004d;
@@ -230,6 +235,7 @@ h5{
 	padding: 13px 30px;
 	border-radius: 30px;
 	transition: .4s; 
+	margin-left:90px ;
 }
 .contact-me .button-two:hover{
 	background-color: transparent;
@@ -284,4 +290,171 @@ footer p:nth-child(2){
 	color:#f9004d;
 	bottom: 35px;
 	font-size: 14px; 
+}
+
+
+
+
+
+
+
+
+/* skills bar */
+
+.card-row{
+	display: flex;
+}
+
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+
+  width: 150px;
+  height: 150px;
+  background: #8c8787;
+  border-radius: 50%;
+}
+
+.mask,
+.fill-1,
+.fill-2,
+.fill-3,
+.fill-4,
+.fill-5,
+.fill-6 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background:#181717;
+  line-height: 125px;
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 8px;
+  color: rgb(241, 231, 231);
+  position: absolute;
+  z-index: 7;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+/* color animation */
+
+.fill-1,
+.fill-2,
+.fill-3,
+.fill-4,
+.fill-5,
+.fill-6 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color:#f9004d;
+}
+
+/* 1st bar */
+.mask.full-1, .circle .fill-1 {
+  animation: fill-1 ease-in-out 2s;
+  transform: rotate(155deg);
+}
+
+
+@keyframes fill-1 {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  100% {
+	transform: rotate(155deg);
+  }
+}
+
+/* 2nd bar */
+.mask.full-2, .circle .fill-2 {
+  animation: fill-2 ease-in-out 2s;
+  transform: rotate(125deg);
+}
+
+@keyframes fill-2 {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  100% {
+	transform: rotate(125deg);
+  }
+}
+
+/* 3rd progress bar */
+.mask.full-3, .circle .fill-3 {
+  animation: fill-3 ease-in-out 2s;
+  transform: rotate(135deg);
+}
+
+@keyframes fill-3 {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  100% {
+	transform: rotate(135deg);
+  }
+}
+
+/* 4th bar */
+.mask.full-4, .circle .fill-4 {
+  animation: fill-4 ease-in-out 2s;
+  transform: rotate(115deg);
+}
+
+@keyframes fill-4 {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  100% {
+	transform: rotate(115deg);
+  }
+}
+
+/* 5th bar */
+.mask.full-5, .circle .fill-5 {
+  animation: fill-5 ease-in-out 2s;
+  transform: rotate(90deg);
+}
+
+@keyframes fill-5 {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  100% {
+	transform: rotate(90deg);
+  }
+}
+
+/* 6th bar */
+.mask.full-6, .circle .fill-6 {
+  animation: fill-6 ease-in-out 2s;
+  transform: rotate(120deg);
+}
+
+@keyframes fill-6 {
+  0% {
+	transform: rotate(0deg);
+  }
+
+  100% {
+	transform: rotate(120deg);
+  }
 }

@@ -1,104 +1,263 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Portfolio website</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  
-  
+
+
 </head>
+
 <body>
 	<nav>
+		<!-- Banner -->
+		<h1 style="color: white; font-size: xx-large;">S<span style="color:#f9004d ;">S</span></h1>
 
 		<input type="checkbox" id="res-menu">
-        <label for="res-menu">
-            <i class="fas fa-bars" id="s1"></i>
-            <i class="fas fa-times" id="s2"></i>
-			
-        </label>
-        
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-    </nav>
-    <!-- Banner -->
-    
-	
-	
+		<label for="res-menu">
+			<i class="fas fa-bars" id="s1"></i>
+			<i class="fas fa-times" id="s2"></i>
+
+		</label>
+
+		<ul>xs
+			<li><a href="#about">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#skill">Skills</a></li>
+			<li><a href="project.html">projects</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+	</nav>
+
+
+
+
 
 	<!----About section start---->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="main">
-			
-			<img src="./Images/kk.jpg">
-			<div class="about-text">
-				<h4>hallo i'm</h4>
-				<h3>Savith Abeyrathna</h3>
+
+			<img style="width: 500px ;margin-top: -150px; margin-right: 100px;" src="./Images/myphoto.jpeg">
+			<div style="margin-top:30px ;" class="about-text">
+				<h4>Hello I'm</h4>
+				<h3 style="font-size:2rem ;">Savith Abeyrathna</h3>
 				<h2>About Me</h2>
 				<h5>Developer <span>& Designer</span></h5>
-				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
+				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the
+					website more & more interactive with web animations.I can provide clean code and pixel perfect
+					design.A responsive design
+					makes your website accessible to all users, regardless of their device.</p>
 				<button type="button">Let's Talk</button>
 			</div>
 		</div>
 	</section>
 
-	<!-----service section start----------->
-	<div class="service">
+	<!-----skills----------->
+	<div class="service" id="skill">
 		<div class="title">
 			<h2>My Skills</h2>
 		</div>
 
 		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+			<div class="card">
+				<img src="Images/html.png" alt="" style="padding:10px ;">
+
+
+				<h5>HTML</h5>
+				<div class="pra">
+					<p>Expertise in Core Python,Analytical Skills.
 					</p>
+
+					<div class="card">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full-2">
+									<div class="fill-2"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill-2"></div>
+								</div>
+								<div class="inside-circle"> 70% </div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<div class="card">
+				<img src="Images/css.png" alt="" style="padding:10px ;">
+				<h5>CSS</h5>
+				<div class="pra">
+					<p>Web development,Coding,UI / UX design.
+					</p>
+					<div class="card">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full-1">
+									<div class="fill-1"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill-1"></div>
+								</div>
+								<div class="inside-circle"> 85% </div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<div class="card">
+
+				<img src="Images/js.png" alt="" style="padding-top:10px ;">
+				<h5>Java Script</h5>
+				<div class="pra">
+					<p>Expertise in Core Python,Analytical Skills.
+					</p>
+
+					<div class="card">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full-3">
+									<div class="fill-3"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill-3"></div>
+								</div>
+								<div class="inside-circle"> 75% </div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+		<div class="box">
+
+
+
+			<div class="card">
+				<img src="Images/py.png" alt="" style="padding-top:10px ;">
+
+
+				<h5 style="padding-top:10px ;">Python</h5>
+				<div class="pra">
+					<p>Expertise in Core Python,Analytical Skills.
+					</p>
+
+					<div class="card">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full-4">
+									<div class="fill-4"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill-4"></div>
+								</div>
+								<div class="inside-circle"> 60% </div>
+							</div>
+						</div>
+					</div>
+
+
+
 				</div>
 			</div>
 
 			<div class="card">
-				<i class="far fa-user"></i>
+
+				<img src="Images/c.png" alt="d" style="padding:10px ;">
 				<h5>C Programming</h5>
 				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+					<p>
+						Stacks and queues data structure in C language.
 					</p>
+
+					<div class="card">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full-5">
+									<div class="fill-5"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill-5"></div>
+								</div>
+								<div class="inside-circle"> 50% </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Python</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
 
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
+			<div class="card">
+
+				<img src="Images/sql.png" alt="" style="padding:10px ;">
+				<h5>Mysqls</h5>
+				<div class="pra">
+					<p>Microsoft SQL server skills,
+						Execution skills....
 					</p>
+					<div class="card">
+						<div class="circle-wrap">
+							<div class="circle">
+								<div class="mask full-6">
+									<div class="fill-6"></div>
+								</div>
+								<div class="mask half">
+									<div class="fill-6"></div>
+								</div>
+								<div class="inside-circle"> 65% </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+
 	<!------Contact Me------>
-	<div class="contact-me">
+	<div style="height:500px" class="contact-me" id="contact">
 		<p>Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a>
+		<form method="post" id="userform">
+			<label style="color:rgb(213, 206, 206) ; font-size: larger;" for="fname">First name:</label><br>
+			<input
+				style="width: 300px; height: 26px;background-color: rgb(198, 199, 200); border-color: #f9004d; border-radius :6px;"
+				type="text" id="fname" name="fname" required><br><br>
+			<label style="color:rgb(213, 206, 206); font-size: larger;" for="lname">Last name:</label><br>
+			<input
+				style="width: 300px; height: 26px;background-color: rgb(198, 199, 200); border-color:#f9004d; border-radius :6px;"
+				type="text" id="lname" name="lname" required><br><br>
+			<label style="color:rgb(213, 206, 206) ; font-size: larger;" for="email">Email:</label><br>
+			<input
+				style="width: 300px; height: 26px;background-color: rgb(198, 199, 200); border-color:#f9004d; border-radius :6px; "
+				type="email" id="email" name="fname" required><br><br>
+			<label style="color:rgb(213, 206, 206) ; font-size: larger;" for="message">Massage:</label><br>
+			<textarea style="border-color:#f9004d ;background-color: rgb(198, 199, 200);" name="massage" id="massage"
+				cols="45" rows="5" required></textarea> <br><br><br>
+
+			<input class="button-two" type="submit" value="Submit">
+		</form>
+
 	</div>
 
 	<!------footer start--------->
@@ -108,9 +267,140 @@
 		<div class="social">
 			<a href="#"><i class="fab fa-facebook-f"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-dribbble"></i></a>
+			<a href="https://github.com/savith12345"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/savith-sabeyrathne-433b41251/"><i class="fab fa-linkedin-in"></i></a>
+
 		</div>
-		<p class="end">ssabey@gmail.com</p>
+		<p class="end">Copyright © Savith Abeyrathna. All Rights Reserved</p>
 	</footer>
+
+	<script>
+		function percentage() {
+			const numb0 = document.getElementsByClassName("inside-circle")[0]; {
+				let counter = 0;
+				setInterval(() => {
+					if (counter == 70) {
+						clearInterval();
+					} else {
+						counter += 1;
+						numb0.textContent = counter + "%";
+					}
+				}, 23);
+			}
+
+			const numb1 = document.getElementsByClassName("inside-circle")[1]; {
+				let counter = 0;
+				setInterval(() => {
+					if (counter == 70) {
+						clearInterval();
+					} else {
+						counter += 1;
+						numb1.textContent = counter + "%";
+					}
+				}, 25);
+			}
+
+			const numb2 = document.getElementsByClassName("inside-circle")[2]; {
+				let counter = 0;
+				setInterval(() => {
+					if (counter == 75) {
+						clearInterval();
+					} else {
+						counter += 1;
+						numb2.textContent = counter + "%";
+					}
+				}, 25);
+			}
+
+			const numb3 = document.getElementsByClassName("inside-circle")[3]; {
+				let counter = 0;
+				setInterval(() => {
+					if (counter == 60) {
+						clearInterval();
+					} else {
+						counter += 1;
+						numb3.textContent = counter + "%";
+					}
+				}, 29);
+			}
+
+			const numb4 = document.getElementsByClassName("inside-circle")[4]; {
+				let counter = 0;
+				setInterval(() => {
+					if (counter == 50) {
+						clearInterval();
+					} else {
+						counter += 1;
+						numb4.textContent = counter + "%";
+					}
+				}, 36);
+			}
+
+			const numb5 = document.getElementsByClassName("inside-circle")[5]; {
+				let counter = 0;
+				setInterval(() => {
+					if (counter == 65) {
+						clearInterval();
+					} else {
+						counter += 1;
+						numb5.textContent = counter + "%";
+					}
+				}, 27);
+			}
+		}
+		percentage();
+	</script>
+
+
+	<!-- fire base -->
+
+
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+		import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyAtdTxCj1Yv5WeYvczZ_3TUwXwReW31UvI",
+			authDomain: "bathch21.firebaseapp.com",
+			databaseURL: "https://bathch21-default-rtdb.asia-southeast1.firebasedatabase.app",
+			projectId: "bathch21",
+			storageBucket: "bathch21.appspot.com",
+			messagingSenderId: "687171514786",
+			appId: "1:687171514786:web:47a0d531d7b20bc25042fb"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getDatabase(app);
+
+
+
+		document.getElementById("userform").addEventListener("submit", (e) => {
+
+			e.preventDefault();
+			let fName = document.getElementById("fname").value;
+			let lName = document.getElementById("lname").value;
+			let email = document.getElementById("email").value;
+			let message = document.getElementById("massage").value;
+			set(ref(db, 'users/' + fName), {
+				fName: fName,
+				lName: lName,
+				email: email,
+				messages: message
+
+			});
+		});
+
+
+	</script>
+
+
+
 </body>
+
 </html>
